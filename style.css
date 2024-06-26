@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: 0.5s;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #22ca13;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+header ul{
+    display: flex;
+    gap: 40px;
+}
+header ul li{
+    list-style: none;
+
+}
+header ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #2cd1bb;
+    transition: 0.5s;
+}
+.content{
+    position: relative;
+    max-width: 700px;
+
+}
+.content h2{
+    font-size: 5.5em;
+    color: #efd6ac ;
+    transition: 0.5s;
+}
+.content h2 span{
+    color: #c44900;
+}
+.content button{
+    position: relative;
+    background: #183a37  ;
+    color: #efd6ac;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.content button.resume{
+    background: transparent;
+    color: #2cd1bb;
+}
+img{
+    height: 450px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 100px;
+}
+.daynight{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width:60px ;
+    height: 60px;
+    background-color: #040b0f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+.daynight ion-icon:nth-child(2),
+.banner.night .daynight ion-icon:nth-child(1){
+    display: none;
+}
+.banner.night .daynight ion-icon:nth-child(2){
+    display: block;
+}
+.banner.night{
+    background: #04151f;
+}
